@@ -1,0 +1,20 @@
+<html>
+<body>
+<div id="speechContainer">
+    <h1>Upload new File</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file"/>
+        <br>
+        <input type="submit" id="submitButton" value="Transcribe"/>
+    </form>
+    {% if text != "" %}
+    <div id="speechTranscriptContainer">
+        <h1>Transcript</h1>
+        <p id="speechText">{{ text }}</p>
+    </div>
+    {% endif %}
+</div>
+</body>
+
+
+</html>
